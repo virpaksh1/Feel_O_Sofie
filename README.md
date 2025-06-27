@@ -1,12 +1,12 @@
 # Feel_O_Sofie
 
-# 📚 QA System with LangChain, FAISS, and HuggingFace
+# QA System with LangChain, FAISS, and HuggingFace
 
 This repository contains a Question-Answering (QA) system built using [LangChain](https://github.com/langchain-ai/langchain), [HuggingFace Transformers](https://huggingface.co/docs/transformers), and [FAISS](https://github.com/facebookresearch/faiss). The system extracts information from text files, indexes them using embeddings, and answers user queries based on the most relevant document context.
 
 ---
 
-## 🔧 Features
+## Features
 
 - Extracts and processes `.txt` files from a ZIP archive.
 - Splits documents into manageable chunks for indexing.
@@ -19,13 +19,13 @@ This repository contains a Question-Answering (QA) system built using [LangChain
 pip install -r requirements.txt
 ```
 
-🔧 Note: If you have a CUDA-compatible GPU, you may install faiss-gpu instead of faiss-cpu.
+Note: If you have a CUDA-compatible GPU, you may install faiss-gpu instead of faiss-cpu.
 
-📂 Input Format
+Input Format
 
 Place your .txt files inside a ZIP file named output_txt.zip in the project root directory. The script will automatically extract and process these files.
 
-🧠 How It Works
+How It Works
 
     Text Extraction: Unzips and reads all .txt files.
 
@@ -40,18 +40,18 @@ Place your .txt files inside a ZIP file named output_txt.zip in the project root
     Answer Generation: Feeds retrieved context and query to a gpt2 model to generate an answer.
     
     
-🧪 Usage
+Usage
 
 To run the script and ask a question:
 ```bash
 python3 src.py
 ```
 
-📄 License
+License
 
 This project is licensed under the MIT License.
 
-🙌 Acknowledgments
+Acknowledgments
 
     LangChain
 
